@@ -1,0 +1,32 @@
+{
+  "name": "sarina",
+  "version": "1.0.0",
+  "description": "Node js project bootstrapper",
+  "main": "sarina.js",
+  "keywords": [
+      "node",
+      "javascirpt",
+      "bootstrapper",
+      "framework",
+      "ioc"
+  ],
+  "engines": {
+    "node": "*"
+  },
+  "dependencies": {
+    "merge":"1.2.0",
+    "winston":"2.2.0"
+  },
+  "devDependencies": {
+    "gulp":"~3.9.1",
+    "gulp-mocha":"~2.2.0",
+    "chai":"~3.5.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/javadparvaresh/Sarina.git"
+  },
+  "author": "javadparvaresh@gmail.com",
+  "license": "MIT",
+  "homepage": "https://github.com/javadparvaresh/Sarina/"
+}
