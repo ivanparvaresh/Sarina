@@ -52,7 +52,7 @@ class Sarina{
     config(){
         this._register("config",arguments);
     }
-    run(){
+    exec(){
         this._register("executable",arguments);
     }
     _register(type,args){
