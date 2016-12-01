@@ -174,8 +174,11 @@ class Sarina{
             var provider=this._serviceProviders[providerName];    
             if (provider.type=="executable"){
                 var instance=this.resolve(provider.name);
-                instance.run().then(function(){
-                    runningServicesCount++;
+                var promise=new Promise(function(resolve,reject){
+                    instance.run(resolve,reject)
+                        .then(function(){
+                            runningServicesCount++;
+                        })    
                 });
             }
         }

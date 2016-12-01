@@ -26,11 +26,9 @@ app.service("simpleService",[],function(){
 
 app.exec("simpleService.run",["simpleService"],function(simpleSrv){
    return {
-        run:function(){
-            return new Promise(function(resolve,reject){
-                console.log(simpleSrv);
-                resolve();
-            })
+        run:function(resolve,reject){
+            console.log(simpleSrv);
+            resolve(true);
         }
     }
 });
